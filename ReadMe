@@ -1,0 +1,161 @@
+J/A+A/620/A89       X-ray catalog of Galactic O stars (Nebot Gomez-Moran+, 2018)
+================================================================================
+The X-ray catalog of spectroscopically identified Galactic O stars.
+Investigating the dependence of X-ray luminosity on stellar and wind parameters.
+    Nebot Gomez-Moran A., Oskinova L.M.
+    <Astron. Astrophys. 620, A89 (2018)>
+    =2018A&A...620A..89N        (SIMBAD/NED BibCode)
+================================================================================
+ADC_Keywords: Stars, O ; X-ray sources ; Stars, distances
+Keywords: stars: massive - X-ray: stars
+
+Abstract:
+    The X-ray emission of O-type stars was first discovered in the early
+    days of the Einstein satellite. Since then many different surveys have
+    confirmed that the ratio of X-ray to bolometric luminosity in O-type
+    stars is roughly constant, but there is a paucity of studies that
+    account for detailed information on spectral and wind properties of
+    O-stars. Recently a significant sample of O stars within our Galaxy
+    was spectroscopically identified and presented in the Galactic O-Star
+    Spectroscopic Survey (GOSS). At the same time, a large high-fidelity
+    catalog of X-ray sources detected by the XMM-Newton X-ray telescope
+    was released. Here we present the X-ray catalog of O stars with known
+    spectral types and investigate the dependence of their X-ray
+    properties on spectral type as well as stellar and wind parameters.We
+    find that, among the GOSS sample, 127 O-stars have a unique XMM-Newton
+    source counterpart and a Gaia data release 2 (DR2) association.
+    Terminal velocities are known for a subsample of 35 of these stars.We
+    confirm that the X-ray luminosities of dwarf and giant O stars
+    correlate with their bolometric luminosity. For the subsample of O
+    stars with measure terminal velocities we find that the X-ray
+    luminosities of dwarf and giant O stars also correlate with wind
+    parameters. However, we find that these correlations break down for
+    supergiant stars. Moreover, we show that supergiant stars are
+    systematically harder in X-rays compared to giant and dwarf O-type
+    stars. We find that the X-ray luminosity depends on spectral type, but
+    seems to be independent of whether the stars are single or in a binary
+    system. Finally, we show that the distribution of log(LX/Lbol) in our
+    sample stars is non-Gaussian, with the peak of the distribution at
+    log(LX/Lbol)~=-6.6.
+
+Description:
+    The spectroscopic sample of Galactic O stars, GOSS (Cat. III/274, Sota
+    et al. 2014ApJS..211...10S; Maiz Apellaniz et al.
+    2016ApJS..224....4M), was used to investigate, in a homogeneous and
+    consistent way, the X-ray emission from O stars. We found that 127
+    stars from GOSS have an unambiguous counterpart in the 3XMM-DR7
+    catalog of X-ray sources and are associated to a Gaia-DR2 source.
+
+File Summary:
+--------------------------------------------------------------------------------
+ FileName      Lrecl  Records   Explanations
+--------------------------------------------------------------------------------
+ReadMe            80        .   This file
+catalog.dat      461      127   GOSXMM catalog
+--------------------------------------------------------------------------------
+
+See also:
+   I/345   : Gaia DR2 (Gaia Collaboration, 2018)
+   I/347   : Distances to 1.33 billion stars in Gaia DR2 (Bailer-Jones+, 2018)
+   IX/50   : XMM-Newton Serendipitous Source Catalogue 3XMM-DR6 (XMM-SSC, 2016)
+   III/274 : Galactic O-Star Spectroscopic Survey (GOSSS) (Sota+, 2014)
+
+Byte-by-byte Description of file: catalog.dat
+--------------------------------------------------------------------------------
+   Bytes Format Units     Label      Explanations
+--------------------------------------------------------------------------------
+   1- 16  A16   ---       GOS        GOS name (LLL.ll+BB.bb_ii, ii: index,
+                                     <GOS GLLL.ll+BB.bb NN> in Simbad) (gos)
+  18- 41  A24   ---       Name       Alternative name (name)
+  44- 64  A21   ---       XMM        3XMM-DR7 name (3XMM JHHMMSS.s+DDMMSS)
+                                      (xmm_name)
+  66- 84  I19   ---       GaiaDR2    Gaia source identifier, identical to the
+                                      Gaia-DR2 source_id (GaiaDR2_source_id)
+  87- 88  I2    h         RAh        Right ascension (J2000) (RAH)
+  90- 91  I2    min       RAm        Right ascension (J2000) (RAM)
+  93- 98  F6.3  s         RAs        Right ascension (J2000) (RAS)
+     101  A1    ---       DE-        Declination sign (J2000) (DEC-)
+ 102-103  I2    deg       DEd        Declination (J2000) (DECD)
+ 105-106  I2    arcmin    DEm        Declination (J2000) (DECM)
+ 108-112  F5.2  arcsec    DEs        Declination (J2000) (DECS)
+ 114-119  F6.3  mag       VMAG       Absolute V magnitude (Mv) (1)
+ 121-126  F6.3  mag     e_VMAG       Absolute V magnitude error (e_Mv)
+ 128-134  F7.3  mag       Mbol       Bolometric magnitude (Mbol) (1)
+ 136-141  F6.3  mag     e_Mbol       Bolometric magnitude error (e_Mbol)
+ 143-147  I5    K         Teff       Effective temperature (Teff) (1)
+ 149-152  I4    K       e_Teff       [2000] Effective temperature error (e_Teff)
+ 154-157  F4.2  [cm/s2]   logg       Effective gravity (logg) (1)
+ 159-162  F4.2  [cm/s2] e_logg       Erro in logg  (e_logg)
+ 164-169  F6.4  [10-7W]   logLbol    Bolometric luminosity in erg/s
+                                      (log_Lbol_Lsun_S)
+ 171-175  I5    km/s      Vinf       ?=-1 Terminal velocity (Vinf) (2)
+ 177-184  F8.5 [Msun/yr]  logdM/dtV  Theoretical mass loss rate
+                                      (log_Mass_rate_vink) (3)
+ 186-193  F8.5 [Msun/yr]  logdM/dt   Estimated  mass loss rate in this paper
+                                      (log_Mass_rate)
+ 195-203  F9.3  kpc       DistG      Estimated distance distance_Gaia
+                                      (distance_Gaia) (4)
+ 205-212  F8.3  kpc     b_DistG      Lower bound on the confidence interval of
+                                      the estimated distance (min_distance_Gaia)
+ 214-222  F9.3  kpc     B_DistG      Upper bound on the confidence interval of
+                                      the estimated distance (max_distance_Gaia)
+ 224-231  F8.3  kpc       DistMV     Spectrophotometric distance
+                                      (distance_Mv)
+ 233-240  F8.3  kpc     e_DistMV     Error in the spectrophotometric distance
+                                      (error_distance_Mv)
+ 242-247  F6.3  mag       Bmag       B magnitude (Bmag)
+ 249-253  F5.3  mag     e_Bmag       Error in the B magnitude (e_Bmag)
+ 255-260  F6.3  mag       Vmag       V magnitude (Vmag)
+ 262-266  F5.3  mag     e_Vmag       Error in the V magnitude (e_Vmag)
+ 268-272  F5.3  mag       E(B-V)     Color excess  (EB_V)
+ 274-278  F5.3  mag     e_E(B-V)     Error in the color excess (e_EB_V)
+ 280-284  F5.3  mag       AV         Extinction in the V band (Av)
+ 286-290  F5.3  mag     e_AV         Error in the extinction in the V band
+                                      (e_Av)
+ 292-303  E12.6 cm-2      NH         Hydrogen column density (Nh)
+ 305-312  F8.5  ct/s      PNCT       Mean count rate in the 0.2-12keV band
+                                      (PN_count_rate)
+ 314-320  F7.5  ct/s    e_PNCT       Error in the mean count rate in the
+                                      0.2-12keV band   (err_count_rate)
+ 322-333  E12.6 mW/m2     FX         Unabsorbed flux in the 0.2-12keV band
+                                      in erg/s/cm^2^ (fx)
+ 335-346  E12.6 mW/m2   b_FX         Minimum unabsorbed flux in the 0.2-12keV
+                                      band in erg/s/cm^2^ (fx_min)
+ 348-359  E12.6 mW/m2   B_FX         Maximum unabsorbed flux in the 0.2-12keV
+                                      band in erg/s/cm^2^ (fx_max)
+ 361-366  F6.3  mW/m2     logFbol    Bolometric flux in erg/s/cm^2^ (log_fbol)
+ 368-372  F5.3  mW/m2   e_logFbol    Error in the bolometric flux in erg/s/cm^2^
+                                      (e_log_fbol)
+ 374-379  F6.3  ---       logFX/fbol X-ray to bolometric flux in erg/s/cm^2^
+                                      (log_fx_fbol)
+ 381-386  F6.3  ---     b_logFX/fbol Minimum X-ray to bolometric flux
+                                      (min_log_fx_fbol)
+ 388-393  F6.3  ---     B_logFX/fbol Maximum X-ray to bolometric flux
+                                      (max_log_fx_fbol)
+ 395-400  F6.3 [10-7W]    logLX      X-ray luminosity in erg/s (log_Lx)
+ 402-407  F6.3 [10-7W]  b_logLX      Minimum X-ray luminosity in erg/s
+                                      (min_log_Lx)
+ 409-414  F6.3 [10-7W]  B_logLX      Maximum X-ray luminosity in erg/s
+                                      (max_log_Lx)
+ 416-421  F6.3 [10-7W]    logLbolG   Bolometric luminosity in erg/s
+                                      (log_Lbol_Gaia)
+ 423-428  F6.3 [10-7W]  b_logLbolG   Minimum bolometric luminosity in erg/s
+                                      (min_log_Lbol_Gaia)
+ 430-435  F6.3 [10-7W]  B_logLbolG   Maximum bolometric luminosity in erg/s
+                                      (max_log_Lbol_Gaia)
+ 437-442  F6.3  ---       HR2        Hardness ratio HR2 (HR2)
+ 444-448  F5.3  ---     e_HR2        Error in HR2 (HR2_ERR)
+ 450-455  F6.3  ---       HR3        ? Hardness ratio HR3 (HR3)
+ 457-461  F5.3  ---     e_HR3        ? Error in HR3 (HR3_ERR)
+--------------------------------------------------------------------------------
+Note (1): from Martins et al. (2005A&A...436.1049M).
+Note (2): from Prinja et al. (1990ApJ...361..607P.)
+Note (3): from the Vink et al. (2000A&A...362..295V) recipe.
+Note (4): From Bailer-Jones et al., 2018AJ....156...58B, Cat. I/347.
+--------------------------------------------------------------------------------
+
+Acknowledgements:
+    Ada Nebot Gomez-Moran, ada.nebot(at)astro.unistra.fr
+
+================================================================================
+(End) Ada Nebot Gomez-Moran [ObAS], Patricia Vannier [CDS]    11-Oct-2018

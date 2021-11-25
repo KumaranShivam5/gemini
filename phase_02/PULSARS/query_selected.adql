@@ -1,0 +1,51 @@
+SELECT
+m.name , m.ra, m.dec , m.pileup_flag ,
+m.photflux_aper_b , m.photflux_aper_h , m.photflux_aper_m , m.photflux_aper_s , m.photflux_aper_u , m.photflux_aper_w ,
+m.flux_aper_b , m.flux_aper_h , m.flux_aper_m , m.flux_aper_s , m.flux_aper_u , m.flux_aper_w ,
+m.photflux_aper_avg_b , m.photflux_aper_avg_h , m.photflux_aper_avg_m , m.photflux_aper_avg_s , m.photflux_aper_avg_u , m.photflux_aper_avg_w , 
+m.flux_aper_avg_b , m.flux_aper_avg_h , m.flux_aper_avg_m , m.flux_aper_avg_s , m.flux_aper_avg_u , m.flux_aper_avg_w , 
+m.flux_powlaw_aper_b ,m.flux_powlaw_aper_h , m.flux_powlaw_aper_m , m.flux_powlaw_aper_s , m.flux_powlaw_aper_u , m.flux_powlaw_aper_w , 
+m.flux_bb_aper_b, m.flux_bb_aper_h , m.flux_bb_aper_m, m.flux_bb_aper_s, m.flux_bb_aper_u, m.flux_bb_aper_w,
+m.flux_brems_aper_b , m.flux_brems_aper_h , m.flux_brems_aper_m , m.flux_brems_aper_s, m.flux_brems_aper_u , m.flux_brems_aper_w,
+m.flux_apec_aper_b , m.flux_apec_aper_h , m.flux_apec_aper_m , m.flux_apec_aper_s , m.flux_apec_aper_u , m.flux_apec_aper_w , 
+m.flux_powlaw , 
+m.powlaw_gamma ,
+m.powlaw_nh ,
+m.powlaw_ampl , 
+m.powlaw_stat , 
+
+m.flux_bb ,
+m.bb_kt ,
+m.bb_nh , 
+m.bb_ampl ,
+m.bb_stat , 
+
+m.flux_brems ,
+m.brems_kt,
+m.brems_nh , 
+m.brems_norm,
+m.brems_stat, 
+
+m.flux_apec ,
+m.apec_kt ,
+m.apec_abund,
+m.apec_z ,
+m.apec_nh,
+m.apec_norm,
+
+m.hard_hm,
+m.var_inter_hard_prob_hs ,
+m.var_inter_hard_sigma_hs	,
+m.hard_ms,
+m.var_inter_hard_prob_ms ,
+m.var_inter_hard_sigma_ms,
+
+m.ks_intra_prob_b,
+m.ks_intra_prob_h,
+m.ks_intra_prob_m,
+m.ks_intra_prob_s,
+m.ks_intra_prob_u,
+m.ks_intra_prob_w
+
+FROM master_source m 
+WHERE m.name IN ('2CXO J000701.5+730308','2CXO J002316.8+092323','2CXO J010111.0-642230','2CXO J024818.6+602134','2CXO J043715.8-471508','2CXO J043715.9-471509X','2CXO J063344.1+063230','2CXO J063354.3+174614','2CXO J065948.1+141421','2CXO J083520.6-451034','2CXO J102827.8-581906','2CXO J104432.8-573719','2CXO J111214.8-610330','2CXO J111914.2-612749','2CXO J112401.1-365319','2CXO J112439.1-591619','2CXO J123111.3-141143','2CXO J135702.5-642929','2CXO J141330.2-620535','2CXO J142008.1-604817','2CXO J142958.5-591136','2CXO J145930.2-605320','2CXO J150927.1-585056','2CXO J151355.6-590809','2CXO J151419.0-494615','2CXO J153127.8-561055','2CXO J161436.5-223031','2CXO J165839.3-532406','2CXO J170252.4-412848','2CXO J171813.6-382517','2CXO J174429.4-113454','2CXO J181037.3+174437','2CXO J181323.7-124600','2CXO J182608.5-125634','2CXO J183333.5-103407','2CXO J183613.7+592530','2CXO J193938.5+213459','2CXO J195936.7+204814','2CXO J201722.6+060305','2CXO J202819.8+333204','2CXO J203213.1+412724','2CXO J204320.8+171129','2CXO J204710.2+105307','2CXO J205107.5-082737','2CXO J212443.8-335844','2CXO J213955.9+471613','2CXO J221438.8+300038','2CXO J221532.7+513536','2CXO J224142.0-523636')

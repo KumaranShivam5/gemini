@@ -1,0 +1,21 @@
+SELECT TOP 500 gaia_source.source_id,gaia_source.ra,gaia_source.dec,gaia_source.parallax,gaia_source.parallax_error,gaia_source.phot_g_mean_mag,gaia_source.bp_rp,gaia_source.dr2_radial_velocity,gaia_source.dr2_radial_velocity_error
+FROM gaiaedr3.gaia_source 
+WHERE 
+CONTAINS(
+	POINT('ICRS',gaiaedr3.gaia_source.ra,gaiaedr3.gaia_source.dec),
+	CIRCLE('ICRS',245.89675,-26.52575,0.5)
+)=1  AND  (gaiaedr3.gaia_source.astrometric_params_solved=3)
+
+
+
+
+SELECT *
+FROM gaiadr2.gaia_source 
+WHERE 
+CONTAINS(
+	POINT('ICRS',gaiadr2.gaia_source.ra,gaiadr2.gaia_source.dec),
+	CIRCLE('ICRS',245.89675,-26.52575,0.5)
+)=1
+AND gaiadr2.gaia_source.astrometric_params_solved=3
+
+

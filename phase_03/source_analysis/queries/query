@@ -1,0 +1,19 @@
+qry = """
+SELECT DISTINCT m.name,m.ra,m.dec,m.err_ellipse_r0,m.err_ellipse_r1,m.err_ellipse_ang,
+    m.likelihood_class,a.match_type,o.obsid,o.obi,o.region_id,o.theta,o.phi,o.flux_significance_b,
+    o.likelihood_b,o.conf_code,o.dither_warning_flag,o.extent_code,o.sat_src_flag,o.streak_src_flag,
+    o.var_code,o.flux_aper_b,o.flux_aper_lolim_b,o.flux_aper_hilim_b,o.var_index_b,o.var_index_h,
+    o.var_index_m,o.var_index_s,o.var_index_u,o.var_prob_b,o.var_prob_h,o.var_prob_m,o.var_prob_s,
+    o.var_prob_u,o.ks_prob_b,o.ks_prob_h,o.ks_prob_m,o.ks_prob_s,o.ks_prob_u,o.var_sigma_b,
+    o.var_sigma_h,o.var_sigma_m,o.var_sigma_s,o.var_sigma_u,o.var_mean_b,o.var_mean_h,
+    o.var_mean_m,o.var_mean_s,o.var_mean_u,o.var_min_b,o.var_min_h,o.var_min_m,o.var_min_s,
+    o.var_min_u,o.var_max_b,o.var_max_h,o.var_max_m,o.var_max_s,o.var_max_u 
+FROM csc2.master_source m , csc2.master_stack_assoc a , csc2.observation_source o , 
+    csc2.stack_observation_assoc b , csc2.stack_source s 
+WHERE ((a.match_type = 'u') AND (o.flux_significance_b > 10) AND (o.sat_src_flag = 0) 
+    AND (o.streak_src_flag = 0)) AND (m.name = a.name) 
+    AND (s.detect_stack_id = a.detect_stack_id and s.region_id = a.region_id) 
+    AND (s.detect_stack_id = b.detect_stack_id and s.region_id = b.region_id) 
+    AND (o.obsid = b.obsid and o.obi = b.obi and o.region_id = b.region_id)
+ORDER BY name ASC
+"""

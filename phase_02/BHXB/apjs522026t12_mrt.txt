@@ -1,0 +1,593 @@
+Title: WATCHDOG: A Comprehensive All-Sky Database of 
+       Galactic Black Hole X-ray Binaries 
+Authors: Tetarenko B.E., Sivakoff G.R., Heinke C.O., Gladstone J.C. 
+Table: Galactic BH/BHC Primary Source Information
+================================================================================
+Byte-by-byte Description of file: apjs522026t12_mrt.txt
+--------------------------------------------------------------------------------
+   Bytes Format Units    Label  Explanations
+--------------------------------------------------------------------------------
+   1- 22 A22    ---      Name   Source name exclusively used in this work
+  24- 45 A22    ---      OName  Other source name(s) (1)
+      47 A1     ---      Class  Black Hole class (2)
+  49- 59 A11    ---      Type   Type (3)
+  61- 62 I2     h        RAh    ? Hour of Right Ascension (J2000)
+  64- 65 I2     min      RAm    ? Minute of Right Ascension (J2000)
+  67- 72 F6.3   s        RAs    ? Second of Right Ascension (J2000)
+  75- 82 E8.2   arcsec e_RAs    ? Error in RAs (4)
+      84 A1     ---      DE-    Sign of the Declination (J2000)
+  85- 86 I2     deg      DEd    ? Degree of Declination (J2000)
+  88- 89 I2     arcmin   DEm    ? Arcminute of Declination (J2000)
+  91- 96 F6.3   arcsec   DEs    ? Arcsecond of Declination (J2000)
+  98-106 F9.5   arcsec e_DEs    ? Error in DEs (4)
+ 108-111 I4     yr       Obs.Y  ? Year source was discovered
+ 113-117 A5     ---      Tel    X-ray telescope discovery (5)
+ 119-120 A2     ---      Num    Total number of outbursts detected (6) 
+ 122-152 A31    ---      Ref    Reference list (7)
+--------------------------------------------------------------------------------
+Note (1): Recognized by the SIMBAD Database or the 
+          Astrophysics Data System (ADS).
+Note (2): 
+    A = confirmed BH;
+    B = strong BHC;
+    C = likely XRB, weak BHC.
+Note (3): 
+    BH = Confirmed black hole;
+   BHC = black hole candidate;
+     T = transient;
+     P = persistent;
+     R = radio detection;
+     J = confirmed jet;
+    J? = possible jet;
+     W = accretion disk wind.
+Note (4): If the original reference is quoted as (i) an error radius, 
+          then errors in RA and DEC are quoted as this radius, or (ii) an 
+          error ellipse, an equal side error box, calculated from the 
+          projection of the semi-major axis onto the xy plane.
+Note (5): 
+    Ae = Proportional Counters aboard the Aerobee 150 Sounding Rocket;
+    AG = AGILE Satellite;
+    Ar = Ariel V;
+    Be = BeppoSAX;
+    CH = Chandra;
+    CG = CGRO;
+     E = Einstein Observatory;
+    EX = EXOSAT;
+     G = GRANAT;
+    GS = GINGA;
+     H = HEAO 1;
+     I = INTEGRAL;
+    Mx = MAXI;
+     M = MIR Space Station;
+    O7 = OSO 7;
+    Rx = RXTE;
+    Ro = ROSAT;
+    S2 = Spacelab 2 Telescope;
+    Sw = Swift;
+     U = UHURU;
+     V = VELA 5B;
+     X = XMM-Newton.
+Note (6): In each source, including those referenced in the literature 
+          and the results of our algorithm.
+Note (7):
+    1 = McClintock & Remillard (2006) and references therein;
+    2 = Marti et al. (2000b);
+    3 = Sunyaev et al. (1991a);
+    4 = Hertz & Grindlay (1984);
+    5 = Liu et al. (2007) and references therein;
+    6 = Elvis et al. (1975);
+    7 = Ebisawa et al. (2003);
+    8 = Kaluzienski et al. (1975);
+    9 = Pounds (1974);
+   10 = Eyles et al. (1975);
+   11 = Bonanos et al. (2009);
+   12 = Leong et al. (1971);
+   13 = Cutri et al. (2003);
+   14 = Matilsky et al. (1972);
+   15 = Jones et al. (1976);
+   16 = Tomsick et al. (2005) and references therein;
+   17 = Priedhorsky (1986);
+   18 = Tomsick (2005);
+   19 = Kalemci et al. (2008);
+   20 = Tomida et al. (2009);
+   21 = Nakahira et al. (2011),
+   22 = van Leeuwen (2007);
+   23 = Fuhrmeister & Schmitt (2003);
+   24 = Giacconi et al. (1974);
+   25 = Parmar et al. (1993);
+   26 = Filippenko et al. (1999);
+   27 = Ballet et al. (1993);
+   28 = Harmon et al. (1993a);
+   29 = Borozdin et al. (1995);
+   30 = Vargas et al. (1996);
+   31 = Trudolyubov et al. (1999);
+   32 = Sunyaev et al. (1997);
+   33 = Paul et al. (1996);
+   34 = Mandrou (1990);
+   35 = Castro-Tirado et al. (1992);
+   36 = McCrosky (1992);
+   37 = Paciesas et al. (1992);
+   38 = Shrader et al. (1997);
+   39 = Zhang et al. (1994);
+   40 = Brocksopp et al. (2006);
+   41 = Sobczak et al. (1999);
+   42 = Yamauchi & Koyama (1990);
+   43 = Makino (1988);
+   44 = Yamauchi & Nakamura (2004);
+   45 = Downes et al. (2001);
+   46 = Kitamoto et al. (1992) and references therein;
+   47 = Makino (1987);
+   48 = Casares et al. (2004);
+   49 = Tsunemi et al. (1989);
+   50 = Richer (1987);
+   51 = Kitamoto et al. (1989);
+   52 = Zycki et al. (1999);
+   53 = Markert et al. (1973);
+   54 = Motch et al. (1985);
+   55 = Zdziarski et al. (2004) and references therein;
+   56 = Rubin et al. (1998);
+   57 = Motta et al. (2009);
+   58 = Buxton et al. (2012) and references therein;
+   59 = Belloni (2010) and references therein;
+   60 = Corbel et al. (2013) and references therein;
+   61 = Buxton et al. (2013a);
+   62 = Griffiths et al. (1977);
+   63 = Griffiths et al. (1978);
+   64 = Kaluzienski & Holt (1977);
+   65 = Watson et al. (1978);
+   66 = White et al. (1988);
+   67 = Pan et al. (1995);
+   68 = Steeghs et al. (2003);
+   69 = Doxsey et al. (1977);
+   70 = Kaluzienski et al. (1977);
+   71 = Reynolds et al. (1999);
+   72 = Emelyanov et al. (2000);
+   73 = Zhou et al. (2013) and references therein;
+   74 = Corbel et al. (2005) and references therein;
+   75 = Capitanio et al. (2010) and references therein;
+   76 = Nakahira et al. (2013);
+   77 = Shidatsu et al. (2012);
+   78 = Negoro et al. (2012);
+   79 = Debnath et al. (2013a);
+   80 = Tendulkar et al. (2014);
+   81 = King et al. (2012b);
+   82 = Yoshikawa et al. (2015);
+   83 = Liu et al. (2006) and references therein;
+   84 = Krivonos et al. (2005);
+   85 = Sguera et al. (2007);
+   86 = Kuulkers et al. (2003);
+   87 = Lutovinov & Revnivtsev (2003);
+   88 = Capitanio et al. (2006);
+   89 = Revnivtsev et al. (2003);
+   90 = in't Zand et al. (2003);
+   91 = Capitanio et al. (2012) and references therein;
+   92 = Altamirano et al. (2011c);
+   93 = Bird et al. (2010);
+   94 = Grebenev et al. (2005b);
+   95 = Grebenev et al. (2005a);
+   96 = Grebenev et al. (2007);
+   97 = Capitanio et al. (2009b);
+   99 = Yang et al. (2010b);
+  100 = Barlow et al. (2005);
+  101 = Walter et al. (2004);
+  102 = Sidoli et al. (2011);
+  103 = Miller et al. (2006c);
+  104 = Lee et al. (2002);
+  105 = Neilsen & Lee (2009);
+  106 = Bird et al. (2007);
+  107 = Markwardt et al. (2008b);
+  108 = Shaw et al. (2008);
+  109 = Krimm et al. (2008b);
+  110 = Soldi et al. (2006);
+  111 = Rodriguez et al. (2007);
+  112 = Walter et al. (2007);
+  113 = Paizis et al. (2007a);
+  114 = Paizis et al. (2009);
+  115 = Kallman et al. (2009);
+  116 = Diaz Trigo et al. (2014);
+  117 = Chenevez et al. (2014b);
+  118 = Chenevez et al. (2014a);
+  119 = Paizis et al. (2007b);
+  120 = Markwardt et al. (2007);
+  121 = Cheung (2007);
+  122 = Lutovinov et al. (2003b);
+  123 = Greiner et al. (2012);
+  124 = Sato et al. (2012);
+  125 = Suwa et al. (2012);
+  126 = Morihana et al. (2013);
+  127 = Shidatsu et al. (2013);
+  128 = Chakrabarty et al. (2011);
+  129 = Negoro et al. (2011a);
+  130 = Munoz-Darias et al. (2011);
+  131 = Stiele et al. (2012);
+  132 = Negoro et al. (2012);
+  133 = Kennea et al. (2011a);
+  134 = Negoro et al. (2010);
+  135 = Mangano et al. (2010a);
+  136 = Kuulkers et al. (2013);
+  137 = Yamaoka et al. (2012);
+  138 = Ferrigno et al. (2011);
+  139 = Negoro et al. (2011b);
+  140 = Remillard et al. (2002);
+  141 = Russell et al. (2014a);
+  142 = in't Zand et al. (2001);
+  143 = in't Zand et al. (2002c);
+  144 = Wijnands & Miller (2002);
+  145 = in't Zand et al. (1999);
+  146 = Markwardt et al. (1999b);
+  147 = Wijnands & van der Klis (2000);
+  148 = Orosz et al. (2001);
+  149 = Maitra & Bailyn (2006) and references therein;
+  150 = in't Zand et al. (2000);
+  151 = Tachibana et al. (2014a);
+  152 = Yamaoka et al. (2008); Yamaoka & Nakahira (2010); Yamaoka et al. (2010a);
+  153 = Cackett & Miller (2007);
+  154 = Revnivtsev et al. (2002);
+  155 = White & van Paradijs (1996);
+  156 = Skinner et al. (1990);
+  157 = Markwardt (2003b);
+  158 = Markwardt & Swank (2007);
+  159 = Kuulkers et al. (2008);
+  160 = Ozawa et al. (2011);
+  161 = Margon (1980);
+  162 = Krimm et al. (2008c);
+  163 = Krimm et al. (2011b);
+  164 = Krimm et al. (2013b) and references therein;
+  165 = Cummings et al. (2012);
+  166 = Curran et al. (2014);
+  167 = Palmer et al. (2005);
+  168 = Soleri et al. (2012);
+  169 = Cadolle Bel et al. (2007);
+  170 = Shaw et al. (2013);
+  171 = Froning et al. (2014);
+  172 = Mostafa et al. (2013);
+  173 = Markwardt et al. (2008a);
+  174 = Krimm et al. (2008d);
+  175 = Sivakoff et al. (2011);
+  176 = Krimm et al. (2011c);
+  177 = Armas Padilla et al. (2013a);
+  178 = Armas Padilla et al. (2013b);
+  179 = Shahbaz et al. (2013);
+  180 = Krimm et al. (2012);
+  181 = Usui et al. (2012);
+  182 = Reis et al. (2013);
+  183 = Read et al. (2010a);
+  184 = Markwardt et al. (2010);
+  185 = Hog et al. (2000a);
+  186 = Robinson et al. (2002);
+  187 = Belloni et al. (1999b);
+  188 = Smith et al. (1998a);
+  189 = Bartlett et al. (2013);
+  190 = Remillard et al. (2000);
+  191 = Hynes et al. (2000b);
+  192 = McClintock et al. (2001b);
+  193 = Remillard et al. (2005);
+  194 = Zurita et al. (2006);
+  195 = Brocksopp et al. (2010b);
+  196 = Smith (1998);
+  197 = Sobczak et al. (2000);
+  198 = Sturner & Shrader (2005);
+  199 = Rodriguez et al. (2004);
+  200 = Belloni et al. (2002);
+  201 = Tomsick et al. (2001b);
+  202 = Curran & Chaty (2013);
+  203 = Starling et al. (2008);
+  204 = Markwardt et al. (2008c);
+  205 = Remillard (2001);
+  206 = Corbel et al. (2004);
+  207 = Rossi et al. (2004);
+  208 = Tomsick et al. (2004);
+  209 = Ozel et al. (2010);
+  210 = Hiemstra et al. (2011);
+  211 = Markwardt et al. (2009b);
+  212 = Han et al. (2011);
+  213 = Degenaar et al. (2008a);
+  214 = Markwardt & Swank (2008);
+  215 = Armas-Padilla et al. (2011);
+  216 = Remillard et al. (2003);
+  217 = Cadolle Bel et al. (2004);
+  218 = Brocksopp et al. (2005);
+  219 = Levine et al. (2005a);
+  220 = Turler et al. (2005a);
+  221 = Hjellming et al. (1998a);
+  222 = Smith et al. (1998b);
+  223 = Brocksopp et al. (2007);
+  224 = Revnivtsev et al. (2000c);
+  225 = Brocksopp et al. (2009);
+  226 = Markwardt et al. (2009c);
+  227 = Munoz-Darias et al. (2010);
+  228 = Stiele et al. (2011);
+  299 = Curran et al. (2011b);
+  230 = Chun et al. (2013);
+  231 = Revnivtsev et al. (1998a);
+  232 = Goldoni et al. (1999);
+  233 = Remillard et al. (1997);
+  234 = Cackett et al. (2006);
+  235 = Markwardt et al. (2008d);
+  236 = Rupen et al. (2006);
+  237 = Remillard et al. (2006);
+  238 = Sriram et al. (2013a);
+  239 = Roy et al. (2011);
+  240 = Gierlinski et al. (2009);
+  241 = Sala et al. (2007);
+  242 = Still et al. (2005a);
+  243 = Levine, A.M. and Lin, D. and Remillard, R.A. (2005);
+  244 = Cadolle Bel et al. (2009);
+  245 = Zurita Heras et al. (2011);
+  246 = Barret et al. (1996b);
+  247 = Marshall et al. (1996);
+  248 = Sala et al. (2008);
+  249 = Wood et al. (1999);
+  250 = Farinelli et al. (2013),
+  251 = Casella et al. (2004);
+  252 = Sriram et al. (2013b);
+  253 = Stephen et al. (2005);
+  254 = Remillard & Smith (2002);
+  255 = Karasev et al. (2007);
+  256 = Karasev et al. (2008);
+  257 = Krimm et al. (2010);
+  258 = Woods et al. (2002);
+  259 = in't Zand et al. (2002b);
+  260 = Gogus et al. (2004);
+  261 = Jonker et al. (2004);
+  262 = Krimm et al. (2013c);
+  263 = Hynes et al. (1999);
+  264 = Remillard et al. (1998);
+  265 = Campana et al. (2002);
+  266 = Vasiliev et al. (2000);
+  267 = Remillard & McClintock (2006);
+  268 = Kitamoto et al. (1984);
+  269 = Harmon et al. (1992);
+  270 = Park et al. (2004);
+  271 = Kalemci et al. (2005);
+  272 = Krimm et al. (2014b);
+  273 = Cui et al. (2000);
+  274 = Lapshov et al. (1993);
+  275 = Barret et al. (1992);
+  276 = Hjellming et al. (1998c);
+  277 = Clark et al. (2000);
+  278 = Mioduszewski & Rupen (2004);
+  279 = Shrader et al. (1994);
+  280 = Davis et al. (1975);
+  281 = Duldig et al. (1979);
+  282 = Geldzahler (1983);
+  283 = Gallo et al. (2006);
+  284 = Owen et al. (1976);
+  285 = Uemura et al. (2000a);
+  286 = Fender et al. (2001);
+  287 = Ball et al. (1995);
+  288 = Brocksopp et al. (2001);
+  289 = Miller-Jones et al. (2011a),
+  290 = Hunstead & Webb (2002);
+  291 = Hannikainen et al. (2001);
+  292 = Corbel et al. (2002);
+  293 = Tomsick et al. (2003);
+  294 = Kaaret et al. (2003);
+  295 = Hjellming et al. (1999c);
+  296 = Calvelo et al. (2009);
+  297 = Tavani et al. (1996);
+  298 = Harmon et al. (1995);
+  299 = Hjellming & Rupen (1995);
+  300 = Tingay et al. (1995);
+  301 = van der Horst et al. (2010);
+  302 = Corbel et al. (2000);
+  303 = Fender et al. (1997b);
+  304 = Fender et al. (1999a);
+  305 = Hannikainen et al. (1998);
+  306 = Rupen et al. (2003b);
+  307 = Pandey et al. (2005);
+  308 = Rupen et al. (2005e);
+  309 = Rupen et al. (2003d);
+  310 = della Valle et al. (1994);
+  311 = Hjellming et al. (1996b);
+  312 = Davies et al. (1976);
+  313 = Hjellming et al. (1996a);
+  314 = Anantharamaiah et al. (1993);
+  315 = Reich & Schlickeiser (1992);
+  316 = Heindl et al. (1994);
+  317 = Mirabel et al. (1992);
+  318 = Miller-Jones & Sivakoff (2012);
+  319 = Corbel et al. (2012);
+  320 = Coriat et al. (2013a);
+  321 = Rupen et al. (2003e);
+  322 = Brocksopp et al. (2013);
+  323 = Diaz Trigo et al. (2013),
+  324 = Fender et al. (2005);
+  325 = Marti et al. (2002);
+  326 = Rodriguez et al. (1992);
+  327 = Rupin et al. (2006);
+  328 = Rupen et al. (2005d);
+  329 = Hjellming et al. (2000);
+  330 = Reis et al. (2012);
+  331 = Russell et al. (2014b);
+  332 = Brocksopp et al. (2002);
+  333 = Rupen et al. (2002);
+  334 = King et al. (2012a),
+  335 = Hjellming et al. (1988);
+  336 = Hjellming et al. (1998b);
+  337 = Han & Hjellming (1992);
+  338 = Abell & Margon (1979);
+  339 = Blundell et al. (2001);
+  340 = Fender et al. (2000a);
+  341 = Chakrabarti et al. (2003);
+  342 = Chakrabarti et al. (2005);
+  343 = Gies et al. (2002);
+  344 = Eikenberry et al. (1998);
+  345 = Harmon et al. (1997);
+  346 = Atoyan & Aharonian (1997);
+  347 = Fender et al. (2002);
+  348 = Fender et al. (1997a);
+  349 = Fender & Pooley (1998);
+  350 = Pooley & Fender (1997);
+  351 = Rodriguez & Mirabel (1997);
+  352 = Rodriguez & Mirabel (1998);
+  353 = Rodriguez et al. (1995);
+  354 = Mirabel & Rodriguez (1994);
+  355 = Miller-Jones et al. (2005);
+  356 = Foster et al. (1996);
+  357 = Chaty et al. (1996);
+  358 = Braes & Miley (1971);
+  359 = Braes & Miley (1976);
+  360 = Hjellming (1973);
+  361 = Hjellming & Wade (1971b);
+  362 = Tigelaar et al. (2004);
+  363 = Stirling et al. (2001);
+  364 = Fender et al. (2000b);
+  365 = Kuulkers et al. (1999);
+  366 = Miller-Jones et al. (2012);
+  367 = Hog et al. (2000b);
+  368 = Jain et al. (1999);
+  369 = Bailyn et al. (1995b);
+  370 = Maitra et al. (2005);
+  371 = Voges et al. (1999);
+  372 = Ueda et al. (1997);
+  373 = Bradt & McClintock (1983);
+  374 = Motch et al. (1998);
+  375 = Samus et al. (1999);
+  376 = Garnavich et al. (1999);
+  377 = Kennea et al. (2012d);
+  378 = Dhawan et al. (2000);
+  379 = Okamura & Noguchi (1988);
+  380 = Miller-Jones et al. (2009);
+  381 = Kaplin et al. (1980);
+  382 = Bradt et al. (1979);
+  383 = Margon et al. (1978);
+  384 = Kitamoto et al. (1990b);
+  385 = della Valle et al. (1991);
+  386 = Bailyn & Orosz (1995);
+  387 = Krimm et al. (2009b);
+  388 = Ponti et al. (2012);
+  389 = Miller et al. (2006b);
+  390 = Miller et al. (2008);
+  391 = Miller et al. (2004);
+  392 = Prat et al. (2009),
+  393 = Zhang et al. (2015a);
+  394 = Miller et al. (2015a);
+  395 = Negoro et al. (2015b);
+  396 = Kuulkers et al. (2015);
+  397 = Yoshii et al. (2015);
+  398 = Tachibana et al. (2014b);
+  399 = Muno et al. (2005b);
+  400 = Muno et al. (2005a);
+  401 = Belanger et al. (2005);
+  402 = Bower et al. (2005);
+  403 = Giacconi et al. (1967);
+  404 = Hjalmarsdotter et al. (2008);
+  405 = Szostek & Zdziarski (2008);
+  406 = Szostek et al. (2008);
+  407 = Koljonen et al. (2010);
+  408 = Watanabe et al. (1994);
+  409 = Marti et al. (2001);
+  410 = Mioduszewski et al. (2001);
+  411 = Zdziarski et al. (2013);
+  412 = Hanson et al. (2000);
+  413 = Vilhu et al. (2009);
+  414 = Oosterbroek et al. (1997);
+  415 = Lucarelli et al. (2010);
+  416 = Williams et al. (2010);
+  417 = Casares et al. (2014);
+  418 = Casares et al. (2012a);
+  418 = Munar-Adrover et al. (2014);
+  419 = Dzib et al. (2015)
+--------------------------------------------------------------------------------
+XTE J0421+560          CI Cam                 C BHC,T,R     04 19 42.141  5.66e-02 +55 59 57.70    0.06780 1998 Rx    1  5,185--189,276--278,367        
+GRO J0422+32           V518 Per               A BH,T,R      04 21 42.79   2.00e-01 +32 54 27.1     0.20000 1992 CG    3  1,36--38,279                   
+GRO J0422+32           Nova Per 1992                                                                                                                    
+4U 0538-641            LMC X-3                A BH,P        05 38 56.299  1.50e-01 -64 05 03.00    0.15000 1971 U     -  1,11,12                        
+4U 0540-697            LMC X-1                A BH,P        05 39 38.839  1.50e-03 -69 44 35.66    0.00150 1971 U     -  1,12,13                        
+1A 0620-00             V616 Mon               A BH,T,R,J    06 22 44.503  1.80e-01 -00 20 44.72    0.10000 1975 Ar    2  1,5,6,280--284,365             
+1A 0620-00             Nova Mon 1975                                                                                                                    
+1A 0620-00             Mon X-1                                                                                                                          
+GRS 1009-45            MM Vel                 A BH,T        10 13 36.377  1.60e-01 -45 04 31.95    0.15000 1993 G,CG  1  1,13,26,274,386                
+GRS 1009-45            Nova Vel 1993                                                                                                                    
+XTE J1118+480          KV UMa                 A BH,T,R,J    11 18 10.80   1.10e-01 +48 02 12.6     0.04000 2000 Rx    2  1,13,190--195,285,286          
+GS 1124-684            GU Mus                 A BH,T,R      11 26 26.42   6.00e-01 -68 40 32.6     0.17000 1991 G,GS  1  1,45,46,287,385                
+GS 1124-684            Nova Muscae 1991                                                                                                                 
+IGR J11321-5311        -                      C BHC,T       11 32 06.     1.20e+02 -53 11        120.00000 2005 I     1  5,84,85                        
+MAXI J1305-704         -                      B BHC,T       13 06 56.440  5.00e+00 -70 27 04.91    5.00000 2012 Mx    1  123--127                       
+SWIFT J1357.2-0933     SWIFT J13572-093313    A BH,T,R,J?   13 57 16.818  2.55e-01 -09 19 12.00    0.16400 2011 Sw    1  164,175--179                   
+GS 1354-64             BW Cir                 A BH,T,R,J?   13 58 09.74   5.00e-01 -64 44 05.2     0.50000 1987 GS    5  1,45,47,48,288,384,394         
+1A 1524-62             KY TrA                 B BHC,T       15 28 17.2    3.00e+00 -61 52 58.      3.00000 1974 Ar    2  1,7--9,275,382                 
+1A 1524-62             TrA X-1                                                                                                                          
+Swift J1539.2-6227     -                      B BHC,T       15 39 11.963  5.00e-01 -62 28 02.30    0.50000 2008 Sw    1  162--164                       
+MAXI J1543-564         -                      B BHC,T,R,J?  15 43 17.336  6.00e-01 -56 24 48.35    0.60000 2011 Mx    1  128--132,289                   
+4U 1543-475            IL Lupi                A BH,T,R      15 47 08.6    3.00e+01 -47 40 10.     30.00000 1971 U     4  1,7,14, 268--271,290           
+XTE J1550-564          V381 Nor               A BH,T,R,J    15 50 58.78   2.00e+00 -56 28 35.0     2.00000 1998 Rx,CG 5  1,5,196--202,291--294,368      
+4U 1630-472            Nor X-1                B BHC,T,R,J,W 16 34 01.61   3.00e-01 -47 23 34.8     0.30000 1970 U,V   23 1,5,15--21,116,295,323,388     
+XTE J1637-498          -                      C BHC,T       16 37 02.67   1.80e+00 -49 51 40.6     1.80000 2008 Rx    1  203,204                        
+XTE J1650-500          -                      A BH,T,R,J?,W 16 50 00.98   6.00e-01 -49 57 43.6     0.60000 2001 Rx    1  1,5,205--208,388,391           
+XTE J1652-453          -                      B BHC,T,R     16 52 20.33   2.50e+00 -45 20 39.6     2.50000 2009 Rx    1  209--212,296                   
+GRO J1655-40           V1033 Sco              A BH,T,R,J,W  16 54 00.137  2.30e-01 -39 50 44.90    0.20000 1994 CG    3  1,5,39--41,115,297--300        
+GRO J1655-40           Nova Sco 1994                                                                                     369,388--390                   
+MAXI J1659-152         CXOU J165902.6-151518  B BHC,T,R     16 59 01.71   7.00e-01 -15 15 28.5     0.70000 2010 Sw    1  133--137,301                   
+GX 339-4               V821 Ara               A BH,T,R,J,W  17 02 49.36   5.00e-02 -48 47 22.8     0.05000 1972 O7    20 1,13,53--61,302--305           
+GX 339-4               3A 1659-487                                                                                       388,391                        
+H 1705-250             V2107 Oph              A BH,T        17 08 14.6    3.00e+00 -25 05 29.      2.00000 1977 Ar,H  1  1,7,62--65                     
+H 1705-250             Nova Oph 1977                                                                                                                    
+IGR J17091-3624        SAX J1709.1-3624       B BHC,T,R,J,W 17 09 08.     2.40e+01 -36 24 24.     24.00000 2003 I     6  5,81,86--93,306,307            
+IGR J17098-3628        2MASSJ17094612-3627573 B BHC,T,R     17 09 46.124  3.00e-02 -36 27 57.31    0.03000 2005 I     2  5,13,94--97,308,392            
+SAX J1711.6-3808       -                      C BHC,T       17 11 37.1    3.20e+00 -38 07 06.      3.20000 2001 Be    1  1,5,142--144                   
+Swift J1713.4-4219     -                      C BHC,T       17 13 26.60   1.80e+02 -42 19 37.2   180.00000 2009 Sw    1  164,387                        
+XMMSL1J171900.4-353217 XTE J1719-356          C BHC,T       17 19 00.4    8.00e+00 -35 32 17.      8.00000 2010 X     16 183,184                        
+XTE J1719-291          Swift J171916.9-290410 C BHC,T       17 19 16.970  3.80e+00 -29 04 10.35    3.80000 2008 Rx    1  213--215                       
+GRS 1716-249           V2293 Oph              B BHC,T,R,J?  17 19 36.93   5.00e-01 -25 01 03.4     0.50000 1993 G,CG  2  1,7,27,28,310,311              
+GRS 1716-249           GRO J1719-24                                                                                                                     
+GRS 1716-249           Nova Oph 1993                                                                                                                    
+XTE J1720-318          V1228 Sco              B BHC,T,R,J?  17 19 58.994  2.50e-01 -31 45 01.25    0.25000 2003 Rx    1  5,216--218,309                 
+XTE J1720-318          Nova Sco 2003                                                                                                                    
+XTE J1727-476          IGR J17269-4737        C BHC,T       17 26 49.28   3.00e-01 -47 38 24.9     0.30000 2005 Rx,I  1  5,219,220,370                  
+IGR J17285-2922        XTE J1728-295          C BHC,T       17 28 38.97   3.50e+00 -29 21 44.9     3.50000 2004 I     2  5,99,101--102                  
+GRS 1730-312           KS 1730-312            C BHC,T       17 33 52.3    1.20e+02 -31 12 25.    120.00000 1994 G,M   1  1,5,29,30                      
+GRS 1730-312           AX J1733.9-3112                                                                                                                  
+KS 1732-273            GS 1734-275            B BHC,T       17 36 02.0    7.00e+00 -27 25 41.      7.00000 1988 GS    1  5,42--44,371                   
+IGR J17379-3747        XTE J1737-376          C BHC,T       17 37 58.81   3.18e+02 -37 46 19.6   318.00000 2004 Rx    2  106--109                       
+GRS 1737-31            AX J1740.1-3102        C BHC,T       17 40 09.     3.00e+01 -31 02 24.     30.00000 1997 G     1  1,5,31,32,372                  
+GRS 1739-278           XTE J1739-278          B BHC,T,R     17 42 40.03   4.00e-01 -27 44 52.7     0.40000 1996 G     2  1,5,33,272,313                 
+GRS 1739-278           V2606 Oph                                                                                                                        
+1E 1740.7-2942         Great Annihilator      B BHC,P,R,J   17 43 54.83   1.00e-01 -29 44 42.6     0.10000 1984 E     -  1--4,314--317                  
+1E 1740.7-2942         Swift J1743.9-2944                                                                                                               
+Swift J174510.8-262411 Swift J1745.1-2624     B BHC,T,R,J   17 45 10.849  1.00e-02 -26 24 12.60    0.01000 2012 Sw    1  164--166,318--320              
+IGR J17454-2919        -                      C BHC,T       17 45 28.     5.00e+00 -29 19 55.      5.00000 2014 I     1  80,117,118                     
+1A 1742-289            -                      B BHC,T,R     17 45 37.0    3.00e+00 -29 01 07.      3.00000 1975 Ar    1  1,7,10,312,373                 
+CXOGC J174540.0-290031 -                      B BHC,T,R,J?  17 45 40.03   3.00e-01 -29 00 31.0     0.30000 2004 CH    1  399--402                       
+H 1743-322             IGR J17464-3213        B BHC,T,R,J,W 17 46 15.608  1.70e-01 -32 14 00.60    0.50000 1977 Ar,H  17 1,68--79,103,321               
+H 1743-322             XTE J17464-3213                                                                                   366,388,393                    
+XTE J1748-288          AX J1748.0-2829        B BHC,T       17 48 05.06   6.00e-01 -28 28 25.8     0.60000 1998 Rx,CG 1  5,221--224                     
+IGR J17497-2821        SWIFT J1749.6-2820     C BHC,T       17 49 38.037  6.00e-01 -28 21 17.37    0.60000 2006 I     1  5,110--114                     
+SLX 1746-331           1RXS J174948.4-331215  B BHC,T       17 49 48.50   1.84e+01 -33 12 18.3    18.40000 1990 S2    5  1,23,155--160,374              
+XTE J1752-223          SWIFT J1752.1-2220     B BHC,T,R,J   17 52 15.095  3.00e-01 -22 20 32.782   0.30000 2009 Rx    1  225--230,322                   
+Swift J1753.5-0127     SwiftJ175328.5-012704  B BHC,P,R,J   17 53 28.29   5.00e-02 -01 27 06.2     0.05000 2005 Sw    1  5,82,164,167--172,324          
+XTE J1755-324          -                      C BHC,T       17 55 28.6    6.00e+01 -32 28 39.     60.00000 1997 Rx    1  1,5,7,231--233                 
+H 1755-338             V4134 Sgr              B BHC,P       17 58 40.0    2.00e+01 -33 48 27.     20.00000 1971       -  1,7,66,67,267,373              
+GRS 1758-258           SWIFT J1801.2-2544     B BHC,P,R,J,W 18 01 12.40   1.50e-01 -25 44 36.1     0.20000 1990 G     -  1,3,5,34,325,326,388           
+XTE J1812-182          XMMUJ181227.8-181234   C BHC,T       18 12 27.8    2.00e+00 -18 12 34.      2.00000 2003 X     2  5,234,235                      
+IGR J18175-1530        XTE J1817-155          C BHC,T       18 17 34.3    1.50e+02 -15 30 41.    150.00000 2007 I     1  119--121                       
+XTE J1817-330          SWIFT J1817.6-3300     B BHC,T,R,W   18 17 43.54   3.00e+01 -33 01 07.8    30.00000 2006 Rx    1  5,236--241,327,388             
+XTE J1818-245          -                      B BHC,T,R     18 18 24.8    7.00e+00 -24 32 15.      7.00000 2005 Rx    1  5,242--245,328                 
+SAX J1819.3-2525       V4641 Sgr              A BH,T,R,J    18 19 21.63   7.00e-01 -25 24 25.8     0.70000 1999 Be,Rx 26 1,13,145--154,329,375,397,398  
+SAX J1819.3-2525       XTE J1819-254                                                                                                                    
+MAXI J1836-194         -                      B BHC,T,R,J   18 35 43.43   1.80e+00 -19 19 12.1     1.80000 2011 Mx    1  138--141,330,331               
+Swift J1842.5-1124     -                      C BHC,T       18 42 17.45   6.00e-01 -11 25 03.9     0.60000 2008 Sw    2  164,173,174                    
+EXO 1846-031           -                      C BHC,T       18 49 17.1    1.10e+01 -03 03 44.     11.00000 1985 EX    1  1,7, 25                        
+IGR J18539+0727        -                      C BHC,T       18 53 54.     1.80e+02 +07 27        180.00000 2003 I     1  5,87,122                       
+XTE J1856+053          -                      C BHC,T       18 56 39.     1.08e+02 +05 19 48.    108.00000 1996 Rx    5  5,246--248                     
+XTE J1859+226          V406 Vul               A BH,T,R,J    18 58 41.58   5.00e-01 +22 39 29.4     0.50000 1999 Rx    1  1,5,249--251,273,332,376       
+XTE J1901+014          SWIFT J1901.6+0127     C BHC,T       19 01 41.00   1.20e+01 +01 26 18.5    12.00000 2002 Rx    4  83,253--257                    
+XTE J1901+014          1RXSJ190141.0+012618                                                                                                             
+XTE J1908+094          -                      B BHC,T,R,J   19 08 53.077  1.00e-01 +09 23 04.90    0.10000 2002 Rx    2  1,5,258--262,333               
+SWIFT J1910.2-0546     MAXI J1910-057         C BHC,T,R     19 10 22.8    3.50e+00 -05 47 58.      3.50000 2012 Sw,Mx 1  164,180--182,334,377           
+SS 433                 V1343 Aql              C BHC,P,R,J   19 11 49.57   1.50e-01 +04 58 57.9     0.10000 1978 U     -  13,83,161,338-343,381          
+SS 433                 3A 1909+048                                                                                                                      
+GRS 1915+105           V1487 Aql              A BH,P,R,J,W  19 15 11.55   1.00e-03 +10 56 44.8     0.00100 1992 G     1  1,5,35,104,105,344-357         
+GRS 1915+105                                                                                                             378,388                        
+4U 1956+350            V1357 Cyg              A BH,P,R,J    19 58 21.675  3.00e-03 +35 12 05.778   0.00300 1971 U     -  1,22,358-364                   
+4U 1956+350            Cyg X-1                                                                                                                          
+4U 1957+115            V1408 Aql              C BHC,P,W     19 59 24.21   1.00e+00 +11 42 32.4     1.00000 1973 U     -  1,23,24,383,388                
+GS 2000+251            QZ Vul                 A BH,T,R,J?   20 02 49.58   6.00e-01 +25 14 11.3     0.70000 1988 GS    1  1,5,49,335,379                 
+GS 2000+251            Nova Vul 1988                                                                                                                    
+XTE J2012+381          -                      C BHC,T,R     20 12 37.67   4.00e-01 +38 11 01.2     0.40000 1998 Rx    1  1,5,263--266,336               
+GS 2023+338            V404 Cyg               A BH,T,R,J?,W 20 24 03.83   8.33e-09 +33 52 02.2     0.00005 1989 GS    4  1,13,50--52,337,380,395,396,414
+4U 2030+40             Cyg X-3                B BHC,P,R,J   20 32 25.78   3.00e-02 +40 57 27.9     0.03000 1966 Ae    -  13,403--413                    
+4U 2030+40             V1521 Cyg                                                                                                                        
+MWC 656                HD 215227              B BHC,T,R,J?  22 42 57.30   3.00e-03 +44 43 18.25    0.00300 2010 AG    0  22,415--419                    
+MWC 656                AGL J2241+4454                                                                                                                   

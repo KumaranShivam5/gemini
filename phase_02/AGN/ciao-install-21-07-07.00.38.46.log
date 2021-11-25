@@ -1,0 +1,29 @@
+./ciao-install
+ciao-install v1.23 installing ciao-4.13
+Requested packages: sherpa tools prism obsvis contrib CALDB_main
+Linux parrot 5.10.0-6parrot1-amd64 #1 SMP Debian 5.10.28-6parrot1 (2021-04-12) x86_64 GNU/Linux
+Script log file is /home/kumaran/Documents/thesis/phase_02/ciao-install-21-07-07.00.38.46.log
+Preparing to install CIAO for Linux with Python 3.7
+Directory /home/kumaran/Downloads/CIAO does not exist.
+Directory /home/kumaran/CIAO does not exist.
+Downloading file ciao-control (1 Kb) to /home/kumaran/Downloads/CIAO
+Downloading file ciao-4.13-bin-core-Linux.tar.gz (193 Mb) to /home/kumaran/Downloads/CIAO
+Verifying file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-core-Linux.tar.gz
+Installing file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-core-Linux.tar.gz in /home/kumaran/CIAO
+Downloading file ciao-4.13-bin-prism-Linux.tar.gz (503 Kb) to /home/kumaran/Downloads/CIAO
+Verifying file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-prism-Linux.tar.gz
+Installing file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-prism-Linux.tar.gz in /home/kumaran/CIAO
+Downloading file ciao-4.13-bin-obsvis-Linux.tar.gz (1 Mb) to /home/kumaran/Downloads/CIAO
+Verifying file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-obsvis-Linux.tar.gz
+Installing file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-obsvis-Linux.tar.gz in /home/kumaran/CIAO
+Downloading file ciao-4.13-bin-graphics-Linux.tar.gz (77 Mb) to /home/kumaran/Downloads/CIAO
+Verifying file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-graphics-Linux.tar.gz
+Installing file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-graphics-Linux.tar.gz in /home/kumaran/CIAO
+Downloading file ciao-4.13-bin-sherpa-Linux.tar.gz (1 Gb) to /home/kumaran/Downloads/CIAO
+Verifying file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-sherpa-Linux.tar.gz
+Installing file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-sherpa-Linux.tar.gz in /home/kumaran/CIAO
+Downloading file ciao-4.13-bin-tools-Linux.tar.gz (87 Mb) to /home/kumaran/Downloads/CIAO
+Verifying file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-tools-Linux.tar.gz
+Installing file /home/kumaran/Downloads/CIAO/ciao-4.13-bin-tools-Linux.tar.gz in /home/kumaran/CIAO
+Full CALDB download required.
+Downloading file caldb_4.9.5_main.tar.gz (2 Gb) to /home/kumaran/Downloads/CIAO

@@ -1,0 +1,8 @@
+,id,name,class,correct,incorr,ambig,train_q
+0,BH0003,GINGA 1354-645      ,BH,1,2,0,chk
+1,BH0008,IGR J17464-3213     ,BH,3,0,0,ok
+2,BH0016,CXOU J100510.0-07452,BH,1,0,0,ok
+3,NS0003,1A 1743-288         ,NS,0,1,0,chk
+4,NS0016,CEN X-4             ,NS,2,0,0,ok
+5,NS0055,J1748-2021#1        ,NS,4,0,0,ok
+6,NS0072,SAXWFC J1748.1-2446.,NS,16,0,0,ok

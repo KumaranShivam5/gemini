@@ -1,0 +1,2 @@
+index,exp_time,date,hardness,var_mean,var_sigma,cnts_aper,flux_aper,flux_aper_hilim,flux_aper_lolim,flux_significance
+0,19769.6,2007-04-26T01:13:25,1.4019313304721028,0.00209382,4.0604e-05,42.0,9.5294e-15,1.12238e-14,7.8184e-15,5.117999999999999

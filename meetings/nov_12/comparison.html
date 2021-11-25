@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>XMM variable source classification</h1>
+    <h2>Instrument</h2>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Paper</th>
+                <th>Our work</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Obs</td>
+                <td>XMM Newton</td>
+                <td>CHANDRA</td>
+            </tr>
+            <tr>
+                <td>Instrument</td>
+                <td>EPIC-PN</td>
+                <td>ACIS</td>
+            </tr>
+            <tr>
+                <td>Resolution</td>
+                <td>3.3 arcsec</td>
+                <td>1 arcsec</td>
+            </tr>
+            <tr>
+                <td>Energy Bands</td>
+                <td>0.2 - 0.5 keV<br/>0.5 - 1.0 keV<br/>1.0 - 2.0 keV<br/>2.0 - 4.5 keV<br/>4.5 - 12.0 keV</td>
+                <td>broad band (b) : 0.5-7.0 keV<br/>ultrasoft (u): 0.2-0.5 keV<br/>soft (s) : 0.5-1.2 keV<br/>medium (m) : 1.2-2.0 keV<br/>hard (h) : 2.0-7.0 keV</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Sources</h2>
+    <table>
+        <thead>
+            <tr>
+                <th></th>
+                <th>Paper</th>
+                <th>Our work</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Source of interest</td>
+                <td>time variable sources</td>
+                <td>Globular cluster sources</td>
+            </tr>
+            <tr>
+                <td>Source distribution</td>
+                <td>All sky</td>
+                <td>globular clusters</td>
+            </tr>
+            <tr>
+                <td>Target class</td>
+                <td>AGN , SSS , ULX , GRB , XRB , CV , star</td>
+                <td>NS-LMXRB , BH-LMXRB, CV , Pulsars</td>
+            </tr>
+            <tr>
+                <td>Training data preparation</td>
+                <td>They have first identified all the time varaible x-ray sources in 2XMMi catalogue , then cross-matched to find the nature of as many source as possible , and taken those classes as the target classes.</td>
+                <td>Based on litereature review , we have identified our target class - and then identified sources belonging to those class in Chandra catalogue.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Features</h2>
+    <p>In the paper , they are extracting feature table from the light curve on their own insted of directly taking it from XMM catalogue. Also they are using multi-wavelength (radio / optical / NIR) magnitude values.</p>
+    <p>We are taking the features available in Chandra source catalogue.</p>
+    <h4>Paper</h4>
+    <ul>
+        <li>Time Series features
+            <ul>
+                <li>preiodicity</li>
+                <li>Power-law decay of lightcurve</li>
+                <li>Number of flares</li>
+                <li>Statistical features</li>
+            </ul>
+        </li>
+        <li>Contextual features
+            <ul>
+                <li>Hardness ratio</li>
+                <li>Optical / NIR cross match</li>
+                <li>Radio cross maatch</li>
+                <li>Association with galaxies</li>
+                <li>Galactic coordinates</li>
+            </ul>
+        </li>
+    </ul>
+    <h4>Our work</h4>
+    <ul>
+        <li>Aperture photometry
+            <ul>
+                <li>Photon flux in different bands</li>
+                <li>energy flux - photon flux in a given band* avg band energy</li>
+            </ul>
+        </li>
+        <li>Spectral Hardness ratio</li>
+        <li>Model spectral fits
+            <ul>
+                <li>Black body</li>
+                <li>Powerlaw</li>
+            </ul>
+        </li>
+        <li>Temproal varability
+            <ul>
+                <li>Intra-observation Gregory-Loredo varaibaility</li>
+                <li>Intra-observation Kolmogonorov-Smironov test variabilityFeature importance</li>
+            </ul>
+        </li>
+    </ul>
+    <h2>Classifier / Result</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Paper</th>
+                <th>Our work</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Random Forest</td>
+                <td>Random Forest</td>
+            </tr>
+            <tr>
+                <td>SMOTE algorithm for class imbalance problem</td>
+                <td>No sognificant class imbalance</td>
+            </tr>
+            <tr>
+                <td>Classifying observations and not sources</td>
+                <td>Classifying observation and not soures</td>
+            </tr>
+            <tr>
+                <td>GINI Impurity based Feaure importance as give by Random Forest , no class-wise feature importance</td>
+                <td>Class-wise feature importance</td>
+            </tr>
+            <tr>
+                <td>Report class membership probability for observations</td>
+                <td>Ambiguous class for prediction below a certain threshold</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+</html>

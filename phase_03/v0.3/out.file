@@ -1,0 +1,7 @@
+#Column	name	(A22)	Source name in the format '2CXO Jhhmmss.s{+|-}ddmmss[X]'	(master_source.name)	[""]	[]
+#Column	ra	(A12)	Source position, ICRS right ascension	(master_source.ra)	[""]	[pos.eq.ra;meta.main]
+#Column	dec	(A11)	Source position, ICRS declination	(master_source.dec)	[""]	[pos.eq.dec;meta.main]
+#Column	flux_aper_b	(E9.3)	Aperture-corrected net energy flux inferred from the source region aperture, best estimate derived from the longest block of a multi-band, flux-ordered Bayesian Block analysis of the contributing observations, and calculated by counting X-ray events; ACIS broad (0.5-7.0 keV) energy band	(master_source.flux_aper_b)	["erg/s/cm^2"]	[]
+name	ra	dec	flux_aper_b
+ 2CXO J000701.5+730308	 00 07 01.57	+73 03 08.13	         
+ 2CXO J002350.3-720431	 00 23 50.39	-72 04 31.56	3.794e-16

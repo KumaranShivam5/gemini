@@ -1,0 +1,1 @@
+curl -o out.file   --form query=@query.adql   http://cda.cfa.harvard.edu/csccli/getProperties
