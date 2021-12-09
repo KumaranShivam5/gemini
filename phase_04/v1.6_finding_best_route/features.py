@@ -1,3 +1,6 @@
+from pandas.core.arrays import sparse
+
+
 col_to_drop = [
 'instrument',
  'detect_stack_id',
@@ -257,6 +260,7 @@ id_cols = [
     "num_obs",
     "sepn",
     "name",
+    "src_n" , 
     "ra",
     "dec",
     "livetime",
@@ -266,3 +270,266 @@ id_cols = [
 val_cols = [
     
 ]
+
+
+# Features to be used
+phot_flux = [
+    "photflux_aper_s",
+    "photflux_aper_b",
+    "photflux_aper_u",
+    "photflux_aper_h",
+    "photflux_aper_m",
+]
+
+phot_flux_hilim = [
+    "photflux_aper_hilim_s",
+    "photflux_aper_hilim_b",
+    "photflux_aper_hilim_u",
+    "photflux_aper_hilim_h",
+    "photflux_aper_hilim_m",
+]
+
+phot_flux_lolim = [
+    "photflux_aper_lolim_s",
+    "photflux_aper_lolim_b",
+    "photflux_aper_lolim_u",
+    "photflux_aper_lolim_h",
+    "photflux_aper_lolim_m",
+]
+
+
+en_flux = [
+    "flux_aper_s",
+    "flux_aper_h",
+    "flux_aper_b",
+    "flux_aper_u",
+    "flux_aper_m",
+]
+
+en_flux_hilim = [
+    "flux_aper_hilim_s",
+    "flux_aper_hilim_h",
+    "flux_aper_hilim_b",
+    "flux_aper_hilim_u",
+    "flux_aper_hilim_m",
+]
+
+en_flux_lolim = [
+    "flux_aper_lolim_s",
+    "flux_aper_lolim_h",
+    "flux_aper_lolim_b",
+    "flux_aper_lolim_u",
+    "flux_aper_lolim_m",
+]
+
+
+
+hard = [
+    "hard_hm",
+    "hard_hs",
+    "hard_ms",
+]
+powlaw_fit = [
+    "flux_powlaw",
+    "powlaw_gamma",
+    "powlaw_nh",
+    "powlaw_ampl",
+    "powlaw_stat",
+]
+
+bb_fit = [
+    "flux_bb",
+    "bb_kt",
+    "bb_nh",
+    "bb_ampl",
+    "bb_stat",
+]
+brems_fit = [
+    "flux_brems",
+    "brems_kt",
+    "brems_nh",
+    "brems_norm",
+    "brems_stat",
+]
+
+intra_obs_var = [
+    "var_prob_b",
+    "ks_prob_b",
+    "kp_prob_b",
+    "var_sigma_b",
+    "var_mean_b",
+    "var_min_b",
+    "var_max_b",
+    "var_index_h",
+    "var_prob_h",
+    "ks_prob_h",
+    "kp_prob_h",
+    "var_sigma_h",
+    "var_mean_h",
+    "var_min_h",
+    "var_max_h",
+    "var_index_m",
+    "var_prob_m",
+    "ks_prob_m",
+    "kp_prob_m",
+    "var_sigma_m",
+    "var_mean_m",
+    "var_min_m",
+    "var_max_m",
+    "var_index_s",
+    "var_prob_s",
+    "ks_prob_s",
+    "kp_prob_s",
+    "var_sigma_s",
+    "var_mean_s",
+    "var_min_s",
+    "var_max_s",
+    "var_index_u",
+    "var_prob_u",
+    "ks_prob_u",
+    "kp_prob_u",
+    "var_sigma_u",
+    "var_mean_u",
+    "var_min_u",
+    "var_max_u",
+]
+
+inter_ob_var = [
+    "var_inter_index_b",
+    "var_inter_prob_b",
+    "var_inter_sigma_b",
+    "var_inter_index_h",
+    "var_inter_prob_h",
+    "var_inter_sigma_h",
+    "var_inter_index_m",
+    "var_inter_prob_m",
+    "var_inter_sigma_m",
+    "var_inter_index_s",
+    "var_inter_prob_s",
+    "var_inter_sigma_s",
+    "var_inter_index_u",
+    "var_inter_prob_u",
+    "var_inter_sigma_u",
+]
+
+info_col = [
+'src_id',
+ 'num_obs',
+ 'src_n' , 
+ 'name',
+ 'ra',
+ 'dec',
+ 'livetime',
+ 'significance',
+ 'likelihood',
+]
+
+
+dense_feat = ['src_id',
+ 'livetime',
+ 'dec',
+ 'significance',
+ 'src_n',
+ 'ra',
+ 'num_obs',
+ 'name',
+ 'likelihood',
+ 'photflux_aper_hilim_b',
+ 'photflux_aper_hilim_h',
+ 'flux_aper_hilim_b',
+ 'photflux_aper_hilim_s',
+ 'photflux_aper_hilim_m',
+ 'hard_hs',
+ 'hard_hm',
+ 'flux_aper_hilim_s',
+ 'hard_ms',
+ 'flux_aper_hilim_h',
+ 'flux_aper_hilim_m',
+ 'photflux_aper_hilim_u',
+ 'flux_aper_hilim_u',
+ 'flux_aper_b',
+ 'photflux_aper_b',
+ 'var_inter_prob_b',
+ 'var_inter_sigma_b',
+ 'flux_aper_lolim_b',
+ 'photflux_aper_lolim_b',
+ 'var_inter_sigma_s',
+ 'var_inter_prob_m',
+ 'var_inter_sigma_m',
+ 'var_inter_prob_s',
+ 'var_inter_index_b',
+ 'var_inter_sigma_h',
+ 'var_inter_prob_h',
+ 'photflux_aper_h',
+ 'photflux_aper_lolim_h',
+ 'flux_aper_h',
+ 'photflux_aper_m',
+ 'flux_aper_lolim_h',
+ 'flux_aper_m',
+ 'var_max_b',
+ 'var_mean_b',
+ 'var_min_b',
+ 'var_sigma_b',
+ 'ks_prob_b',
+ 'kp_prob_b',
+ 'var_prob_b',
+ 'photflux_aper_s',
+ 'var_inter_index_h',
+ 'var_inter_index_m',
+ 'flux_aper_lolim_m',
+ 'photflux_aper_lolim_m',
+ 'flux_aper_s',
+ 'photflux_aper_lolim_s',
+ 'flux_aper_lolim_s',
+ 'var_inter_index_s']
+
+sparse_feat = ['var_min_m',
+ 'var_max_m',
+ 'var_prob_m',
+ 'var_mean_m',
+ 'kp_prob_m',
+ 'var_sigma_m',
+ 'ks_prob_m',
+ 'var_prob_h',
+ 'var_max_h',
+ 'var_min_h',
+ 'var_mean_h',
+ 'var_sigma_h',
+ 'ks_prob_h',
+ 'kp_prob_h',
+ 'var_max_s',
+ 'var_sigma_s',
+ 'var_mean_s',
+ 'var_min_s',
+ 'kp_prob_s',
+ 'ks_prob_s',
+ 'var_prob_s',
+ 'var_inter_sigma_u',
+ 'var_inter_prob_u',
+ 'sepn',
+ 'var_inter_index_u',
+ 'photflux_aper_u',
+ 'photflux_aper_lolim_u',
+ 'flux_aper_u',
+ 'flux_aper_lolim_u',
+ 'powlaw_nh',
+ 'powlaw_gamma',
+ 'bb_ampl',
+ 'bb_stat',
+ 'bb_nh',
+ 'bb_kt',
+ 'flux_bb',
+ 'powlaw_stat',
+ 'powlaw_ampl',
+ 'flux_powlaw',
+ 'var_index_m',
+ 'var_max_u',
+ 'var_mean_u',
+ 'var_sigma_u',
+ 'var_prob_u',
+ 'var_min_u',
+ 'ks_prob_u',
+ 'kp_prob_u',
+ 'var_index_h',
+ 'var_index_s',
+ 'var_index_u']
